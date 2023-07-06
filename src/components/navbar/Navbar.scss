@@ -1,11 +1,16 @@
+*{padding: 0;margin: 0;}
 .navbar {
   width: 100%;
-  background-color: var(--main-color);
+  // background-color: var(--main-color);
   color: white;
   font-size: 14px;
   position: fixed;
   top: 0;
   z-index: 999;
+  background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+  &.new {
+    background-color: var(--main-color);
+  }
   .container {
     padding: 0 50px;
     display: flex;
@@ -26,14 +31,16 @@
         .options {
           display: none;
           background-color: var(--main-color);
-          padding: 10px;
-          border-radius: 5px;
+          // padding: 3px;
+          
         }
         &:hover {
           .options {
             display: flex;
             flex-direction: column;
             position: absolute;
+            margin-right: 100px;
+            border-radius: 5px;
           }
           span {
             padding: 5px;

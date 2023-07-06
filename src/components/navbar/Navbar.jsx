@@ -1,9 +1,16 @@
 import { ArrowDropDown, Notifications, Search } from "@mui/icons-material";
 import "./Navbar.scss";
+import { useState } from "react";
 
 function NavBar() {
+  const [isScrolled,setScroll] = useState(false); 
+
+  window.onscroll = () => {
+    setScroll(window.pageYOffset === 0 ? false : true);
+    return () => (window.onscroll = null);
+  }
   return (
-    <div className="navbar">
+    <div className={isScrolled ? "navbar new" : "navbar"}>
       <div className="container">
         <div className="left">
           <span>BLOCKBUSTER</span>
@@ -20,6 +27,7 @@ function NavBar() {
             <ArrowDropDown className="icon" />
                 <div className="options">
                     <span>Settings</span>
+                    <span>Help Center</span>
                     <span>Logout</span>
                 </div>
           </div>
