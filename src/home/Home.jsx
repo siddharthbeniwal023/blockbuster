@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className="home">
       <NavBar />
-      <Featured/> 
+      <Featured type="Movies"/> 
     </div>
   );
 }

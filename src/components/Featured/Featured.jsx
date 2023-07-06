@@ -2,9 +2,23 @@ import Featured_movie from "./Featured_movie/pxfuel.jpg";
 import "./Featured.scss";
 import { InfoOutlined, PlayArrow } from "@mui/icons-material";
 
-function Featured() {
+function Featured({type}) {
   return (
     <div className="featured">
+        {type && (
+          <div className="category">
+            <span>{type === "Movies" ? "Movies" : "Series"}</span>
+            <select name="" id="">
+              <option>Genre</option>
+              <option value="Horror">Horror</option>
+              <option value="Action">Action</option>
+              <option value="Sci-fi">Sci-fi</option>
+              <option value="Family">Family</option>
+              <option value="Comedy">Comedy</option>
+              <option value="Adventure">Adventure</option>
+            </select>
+          </div>
+        )}
       <img src={Featured_movie} alt="FeaturedMovie" />
       <div className="info">
         <span className="moviehead">Alice in Borderland</span>
