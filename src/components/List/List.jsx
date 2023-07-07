@@ -27,18 +27,18 @@ function List({type}) {
       <div className="wrapper">
         <ArrowBackIosOutlined className="sliderarrow left" onClick={() => handleClick("left")} style={{display: !isMoved && 'none'}}/>
         <div className="container" ref={listRef}>
-          <LtItem/>
-          <LtItem/>
-          <LtItem/>
-          <LtItem/>
-          <LtItem/>
-          <LtItem/>
-          <LtItem/>
-          <LtItem/>
-          <LtItem/>
-          <LtItem/>
-          <LtItem/>
-          <LtItem/>
+          <LtItem index={1}/>
+          <LtItem index={1}/>
+          <LtItem index={2}/>
+          <LtItem index={3}/>
+          <LtItem index={4}/>
+          <LtItem index={5}/>
+          <LtItem index={6}/>
+          <LtItem index={7}/>
+          <LtItem index={8}/>
+          <LtItem index={9}/>
+          <LtItem index={10}/>
+          <LtItem index={11}/>
         </div>
         <ArrowForwardIosOutlined className="sliderarrow right" onClick={() => handleClick("right")}/>
       </div>

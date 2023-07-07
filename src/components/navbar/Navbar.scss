@@ -7,7 +7,7 @@
   position: fixed;
   top: 0;
   z-index: 999;
-  background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+  background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.5) 50%);
   &.new {
     background-color: var(--main-color);
   }
@@ -20,6 +20,11 @@
     .left {
       display: flex;
       align-items: center;
+      .title{
+        font-size: 20px;
+        opacity: 1;
+        cursor: pointer;
+      }
     }
     .right {
       display: flex;
@@ -50,6 +55,14 @@
     }
     span {
       margin: 0 15px 0 15px;
+      text-shadow: 5px 5px 10px black;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      &:hover{
+        opacity: 0.5;
+        
+      }
     }
   }
 }

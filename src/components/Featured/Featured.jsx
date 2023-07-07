@@ -5,7 +5,7 @@ import { InfoOutlined, PlayArrow } from "@mui/icons-material";
 function Featured({type}) {
   return (
     <div className="featured">
-        {type && (
+        {/* {type && (
           <div className="category">
             <span>{type === "Movies" ? "Movies" : "Series"}</span>
             <select name="" id="">
@@ -18,18 +18,12 @@ function Featured({type}) {
               <option value="Adventure">Adventure</option>
             </select>
           </div>
-        )}
+        )} */}
       <img src={Featured_movie} alt="FeaturedMovie" />
       <div className="info">
         <span className="moviehead">Alice in Borderland</span>
         <div className="desc">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro
-          doloremque distinctio dolorum atque non. Voluptas quidem harum
-          reiciendis iure culpa, temporibus asperiores deleniti quaerat?
-          Voluptatibus cumque natus quisquam quis quaerat atque illo maiores
-          iste aliquid perspiciatis dolor unde a quasi, reiciendis repellendus
-          mollitia consectetur? Reiciendis, incidunt laudantium. Delectus,
-          perspiciatis facere.
+        Obsessed gamer Arisu suddenly finds himself in a strange, emptied-out version of Tokyo in which he and his friends must compete in dangerous games in order to survive.
         </div>
         <div className="buttons">
           <button>
